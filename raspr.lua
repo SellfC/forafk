@@ -4,5 +4,4 @@ print("load scripts")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/aamaria.lua"))()
 else
 print("not maria")
-  break
 end
