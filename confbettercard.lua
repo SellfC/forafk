@@ -1,3 +1,4 @@
+print("confbettercard.lua loaded successfully")
  -- credit from : Bocchi World card change by DripDoge
 getgenv().FocusWave = 5 -- Priority limit wave
 getgenv().PriorityCards = { -- Priority tags when wave = FocusWave
