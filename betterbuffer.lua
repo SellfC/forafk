@@ -1,3 +1,4 @@
+print("betterbuffer.lua loaded successfully")
 ----------------------
 ----- [ CONFIG ] -----
 ----------------------
