@@ -1,6 +1,5 @@
 print("confbettercard.lua loaded successfully")
- -- credit from : Bocchi World card change by DripDoge
-getgenv().FocusWave = 5 -- Priority limit wave
+ getgenv().FocusWave = 5 -- Priority limit wave
 getgenv().PriorityCards = { -- Priority tags when wave = FocusWave
     "+ Range I",
     "- Cooldown I",
@@ -16,33 +15,43 @@ getgenv().PriorityCards = { -- Priority tags when wave = FocusWave
     "+ Gain 2 Random Effects Tier 3"
 }
 getgenv().Cards = { -- All cards after FocusWave wave ends
+    "+ Enemy Health II",
+    "+ Enemy Health I",
+    "+ Enemy Health III",
+    "+ Yen I",
+    "+ Yen II",
+    "+ Yen III", 
     "+ Explosive Deaths I",
     "+ Explosive Deaths II",
     "+ Explosive Deaths III",
     "+ Gain 2 Random Curses Tier 3",
     "+ Gain 2 Random Curses Tier 2",
     "+ Gain 2 Random Curses Tier 1",
-    "+ Enemy Shield III",
-    "+ Enemy Shield II",
-    "+ Enemy Shield I",
-    "+ Boss Damage I",
     "+ Boss Damage II",
     "+ Boss Damage III",
-    "+ Range I",
-    "+ Cooldown I",
-    "+ Attack I",
+    "+ Enemy Shield III",
+    "+ Enemy Shield II",
+    "+ Enemy Speed I",
+    "+ Enemy Shield I",
+    "+ Boss Damage I",
+    "- Cooldown I",
     "+ Gain 2 Random Effects Tier 1",
-    "+ Cooldown II",
-    "+ Attack II",
-    "+ Gain 2 Random Effects Tier 2",
-    "+ Cooldown III",
-    "+ Range II",
-    "+ Range III",
-    "+ Attack III",
-    "+ Gain 2 Random Effects Tier 3",
+    "+ Range I",
+    "+ Enemy Speed III",
+    "+ Enemy Speed II",
+    "+ Enemy Speed I",
     "+ Enemy Regen I",
     "+ Enemy Regen II",
     "+ Enemy Regen III",
+    "+ Attack I",
+    "- Cooldown II",
+    "- Cooldown III",
+    "+ Gain 2 Random Effects Tier 2",
+    "+ Range II",
+    "+ Attack II",
+    "+ Gain 2 Random Effects Tier 3",
+    "+ Range III",
+    "+ Attack III",
     "+ New Path"
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/sourcecard.lua"))()
