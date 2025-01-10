@@ -1,5 +1,4 @@
-setfpscap(8)
-getgenv().RequiredLevel = 25
+getgenv().RequiredLevel = 40
 
 getgenv().HolidayHuntFarm = false
 getgenv().AutoBuyIcyStar = false
