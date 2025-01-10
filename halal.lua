@@ -1,14 +1,14 @@
 setfpscap(8)
 getgenv().RequiredLevel = 25
 
-getgenv().HolidayHuntFarm = true
-getgenv().AutoBuyIcyStar = true
+getgenv().HolidayHuntFarm = false
+getgenv().AutoBuyIcyStar = false
 
 getgenv().NightmareHuntFarm = false
-getgenv().AutoBuySpookyStar = true
+getgenv().AutoBuySpookyStar = false
 
 getgenv().AutoEquipBoostUnits = true
-getgenv().AutoOpenCapsule = true
+getgenv().AutoOpenCapsule = false
 
 getgenv().AutoSellRareSkins = true
 getgenv().AutoSellEpicSkins = true
