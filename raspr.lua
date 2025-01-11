@@ -4,6 +4,6 @@ print("load scripts")
 setfpscap(15)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/aamaria.lua"))()
 else
-setfpscap(8)
+setfpscap(15)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/halal.lua"))()
 end
