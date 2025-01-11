@@ -2,7 +2,7 @@ local Player = game:GetService("Players").LocalPlayer
 if Player.Name == "MariaRobinson9" then
 print("load scripts")
 setfpscap(15)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/aamaria.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/aamariahal.lua"))()
 else
 setfpscap(15)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/halal.lua"))()
