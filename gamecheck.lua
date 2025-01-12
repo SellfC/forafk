@@ -1,7 +1,16 @@
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
-if game.CreatorId == 10611639 then
-print("load scripts")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/raspr.lua"))()
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
+task.wait( math.random() )
+
+local games = {
+	[10611639] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/raspr.lua', -- AA
+  [4372130] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/bfwa.lua' --  BF
+}
+
+if games[game.CreatorId] then
+    loadstring(game:HttpGet(games[game.CreatorId]))()
 else
-print(game.CreatorId)
+    print(game.CreatorId)
 end
