@@ -1,9 +1,15 @@
-local Player = game:GetService("Players").LocalPlayer
-if Player.Name == "MariaRobinson9" then
-print("load scripts")
-setfpscap(15)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/aamariahal.lua"))()
+local PlayerId = game:GetService("Players").LocalPlayer.UserId
+
+local id = {
+	  [255556396] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/aamaria.lua', 
+    [2522133596] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/aamaria.lua',
+    [3778767509] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/aamaria.lua'
+}
+
+if id[PlayerId] then
+    setfpscap(15)
+    loadstring(game:HttpGet(id[PlayerId]))()
 else
-setfpscap(15)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/halal.lua"))()
+    setfpscap(15)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/halal.lua"))()
 end
