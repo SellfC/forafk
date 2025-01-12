@@ -1,4 +1,4 @@
-task.wait(10)
+task.wait(15)
 script_key="sJcLrXZmMudnvcTXLQGlVJXcrxOgQUqo";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e32274866a41a919678395d899e10bff.lua"))()
 task.wait( math.random() )
