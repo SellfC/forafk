@@ -6,7 +6,7 @@ task.wait( math.random() )
 
 local games = {
 	[10611639] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/raspr.lua', -- AA
-  [4372130] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/bfwa.lua' --  BF
+        [4372130] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/bfwa.lua' --  BF
 }
 
 if games[game.CreatorId] then
