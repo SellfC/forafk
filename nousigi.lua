@@ -9,11 +9,11 @@ getgenv().Config = {
 		["Black Screen"] = true
 	},
 	["Webhook"] = {
-		["Game Finished"] = true,
+		["Game Finished"] = false,
 		["URL"] = "https://discord.com/api/webhooks/1328743860427554826/QjCDnSrAO2zS7eQY1YwoFcSpzAjJWSQMKp5bx5VU8z31nNqWmXYHf76mtybIJBFITc1H"
 	},
 	["Secure"] = {
-		["Walk Around"] = true
+		["Walk Around"] = false
 	},
 	["Macros"] = {
 		["Macro Retry Limit"] = 0,
