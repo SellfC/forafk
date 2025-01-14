@@ -12,6 +12,4 @@ if id[PlayerId] then
 else
     setfpscap(5)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/halal.lua"))()
-    task.wait(match.random())
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/nousigi.lua"))()
 end
