@@ -1,5 +1,40 @@
-getgenv().Config = {["AutoSave"]=true,["Summoner"]={["Exchange Legacy Gem"]=0},["Game Finished"]={["Auto Next"]=true},["Joiner Cooldown"]=0,["Secure"]={["Walk Around"]=true},["Claimer"]={["Auto Claim Quest"]=true,["Auto Claim Level Milestone"]=true,["Auto Accept Daily Mission"]=true,["Auto Claim Present"]=true},["Performance"]={["Delete Map"]=true,["Boost FPS"]=true,["Black Screen"]=true},["Gameplay"]={["Auto Leave"]={["Wave"]=1},["Auto Sell"]={["Wave"]=1},["Auto Skip Wave"]=true,["Auto Sell Farm"]={["Wave"]=1},["Auto Vote Start"]=true},["Webhook"]={["Game Finished"]=true,["URL"]="https://discord.com/api/webhooks/1328743860427554826/QjCDnSrAO2zS7eQY1YwoFcSpzAjJWSQMKp5bx5VU8z31nNqWmXYHf76mtybIJBFITc1H"},["Macros"]={["Macro Retry Limit"]=0,["No Ignore Sell Timing"]=true,["Ignore Macro Timing"]=true}}
+getgenv().Config = {
+	["AutoSave"] = true,
+	["Summoner"] = {
+		["Exchange Legacy Gem"] = 0
+	},
+	["Performance"] = {
+		["Delete Map"] = true,
+		["Boost FPS"] = true,
+		["Black Screen"] = true
+	},
+	["Webhook"] = {
+		["Game Finished"] = true,
+		["URL"] = "https://discord.com/api/webhooks/1328743860427554826/QjCDnSrAO2zS7eQY1YwoFcSpzAjJWSQMKp5bx5VU8z31nNqWmXYHf76mtybIJBFITc1H"
+	},
+	["Secure"] = {
+		["Walk Around"] = true
+	},
+	["Macros"] = {
+		["Macro Retry Limit"] = 0,
+		["Ignore Macro Timing"] = true,
+		["No Ignore Sell Timing"] = true
+	},
+	["Gameplay"] = {
+		["Auto Sell"] = {
+			["Wave"] = 1
+		},
+		["Smart Auto Ability"] = {
+			["Infinite buff rotation delay"] = 15.9
+		},
+		["Auto Leave"] = {
+			["Wave"] = 1
+		},
+		["Auto Sell Farm"] = {
+			["Wave"] = 1
+		}
+	},
+	["Joiner Cooldown"] = 0
+}
 getgenv().Key = "SNRFhpRyjXpsSgfxKsidLeicUNsQbKSu"
 repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
-task.wait(math.random())
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/bf.lua"))()
