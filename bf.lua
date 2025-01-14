@@ -1,44 +1,39 @@
-getgenv().simple_settings = {
-    ["MASTERY"] = { -- Settings related to leveling up weapon or skill mastery
-        ["ACTIVE"] = true, -- Enable or disable mastery leveling (true = enabled, false = disabled)
-        ["METHOD"] = "Half", -- Method for gaining mastery, "Half"[350] or "Full"[600]
-    },
 
-    ["OBJECTIVE"] = { -- Goals for farming and unlocking features
-        ["GODHUMAN"] = true, -- Automatically unlock the "Godhuman" fighting style
-        ["RACE-CONFIGURE"] = {
-            ["RACE"] = {"Human", "Skypiea", "Fishman", "Mink"}, -- List -- "Human", "Skypiea", "Fishman", "Mink"
-            ["RACE-LOCK"] = true, -- Automatically change the character race if not in the list
-            ["RACE-V3"] = true, -- Automatically upgrade character race to V3 if possible Human, Mink, Fishman, (Ghoul, Cyborg) soon
-        },
-        ["FRAGMENT"] = 100000, -- Limit number of fragments to collect
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local request_join_lobby = ReplicatedStorage:WaitForChild("endpoints"):WaitForChild("client_to_server"):WaitForChild("request_join_lobby")
+local lobbies = workspace:WaitForChild("_LOBBIES"):WaitForChild("Story")
 
-        -- SWORD
-        ["CANVANDER"] = true,
-        ["BUDDY-SWORD"] = true,
-        ["CURSED-DUAL-KATANA"] = true,
-        ["SHARK-ANCHOR"] = true, -- soon..
+while true do
+    local found = false -- Флаг для отладки, показывает, был ли найден игрок в этой итерации
 
-        --GUN
-        ["ACIDUM-RIFLE"] = true,
-        ["VENOM-BOW"] = true,
-        ["SOUL-GUITAR"] = true,
+    for i = 1, 9 do
+        local lobbyName = "_lobbytemplategreen" .. i
+        local lobby = lobbies:FindFirstChild(lobbyName)
 
-        -- AURA
-        ["COLOR-HAKI"] = {"Pure Red","Winter Sky","Snow White"}, -- Aura color to craft
-    },
+        if lobby then
+            local Players = lobby:FindFirstChild("Players")
 
-    ["FRUITPURCHASE"] = true, -- Automatically purchase fruits based on priority list
-    ["PRIORITYFRUIT"] = { -- List of preferred fruits to purchase or eat in order of priority
-        [1] = "Dragon-Dragon",
-        [1] = "Dough-Dough",
-        [2] = "Flame-Flame",
-        [3] = "Rumble-Rumble",
-        [4] = "Human-Human: Buddha",
-        [5] = "Dark-Dark",
-    },
+            if Players then
+                local valueObject = Players:FindFirstChild("Value")
 
-    ["FPSCAP"] = 30, -- Limit the frame rate to optimize performance
-    ["LOWTEXTURE"] = true -- Reduce graphic quality for better performance
-}
-loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"))()
+                if valueObject and valueObject:IsA("ObjectValue") and valueObject.Value and valueObject.Value:IsA("Player") then
+                    local playerName = valueObject.Value.Name
+                    local isMaria = string.find(playerName, "MariaRobinson9") ~= nil
+
+                    if isMaria then
+                        local args = { [1] = lobbyName }
+                        request_join_lobby:InvokeServer(unpack(args))
+                        print("MariaRobinson9 найдена в лобби " .. lobbyName .. ". Запрос на присоединение отправлен.")
+                        found = true -- Игрок найден в этом цикле
+                    end
+                end
+            end
+        end
+    end
+
+    if not found then -- Если игрок не был найден ни в одном лобби
+        print("MariaRobinson9 не найдена ни в одном лобби. Проверка повторяется...")
+    end
+
+    wait(1) -- Задержка 1 секунда (ОБЯЗАТЕЛЬНО!)
+end
