@@ -188,7 +188,7 @@ getgenv().Config = {
 		["Ignore Macro Timing"] = true
 	},
 	["Secure"] = {
-		["Walk Around"] false
+		["Walk Around"] = false
 	},
 	["AutoSave"] = true,
 	["World Joiner"] = {
