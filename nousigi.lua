@@ -179,7 +179,7 @@ getgenv().Config = {
 	["Claimer"] = {
 		["Auto Claim Level Milestone"] = true,
 		["Auto Claim Quest"] = true,
-		["Auto Accept Daily Mission"] = true,
+		["Auto Accept Daily Mission"] = false,
 		["Auto Claim Present"] = true
 	},
 	["Macros"] = {
@@ -188,7 +188,7 @@ getgenv().Config = {
 		["Ignore Macro Timing"] = true
 	},
 	["Secure"] = {
-		["Walk Around"] = true
+		["Walk Around"] false
 	},
 	["AutoSave"] = true,
 	["World Joiner"] = {
