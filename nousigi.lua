@@ -15,6 +15,10 @@ getgenv().Config = {
 		["Boost FPS"] = true
 	},
 	["Joiner Cooldown"] = 0,
+	["Webhook"] = {
+		["Game Finished"] = true,
+		["URL"] = "https://discord.com/api/webhooks/1292222634272227399/u4Ml8C-UzLO08a1osvu9S9z7fbwKkW1xq7CNPnfsADmLmVcJlHleEKvJvBQ3wW2H6Tlt"
+	},
 	["Auto Play"] = {
 		["Auto Upgrade"] = true,
 		["Enable"] = true,
