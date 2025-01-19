@@ -2,10 +2,6 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
-print("random join")
-
-task.wait(10)
-
 print("join")
 
 local function generateRandomLobbyTemplate()
