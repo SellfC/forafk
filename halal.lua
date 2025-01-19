@@ -1,6 +1,9 @@
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
+print("load")
+
+task.wait(7)
 
 print("join")
 
