@@ -1,6 +1,6 @@
 getgenv().Config = {
 	["Inventory"] = {
-		["Auto Equip Best"] = true
+		["Auto Equip Best"] = false
 	},
 	["AutoSave"] = true,
 	["Summoner"] = {
