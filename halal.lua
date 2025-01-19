@@ -1,21 +1,69 @@
-getgenv().RequiredLevel = 40
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
 
-getgenv().HolidayHuntFarm = false
-getgenv().AutoBuyIcyStar = false
+print("random join")
 
-getgenv().NightmareHuntFarm = false
-getgenv().AutoBuySpookyStar = false
+task.wait(10)
 
-getgenv().AutoEquipBoostUnits = true
-getgenv().AutoOpenCapsule = false
+print("join")
 
-getgenv().AutoSellRareSkins = true
-getgenv().AutoSellEpicSkins = true
-getgenv().AutoSellLegendarySkins = true
+local function generateRandomLobbyTemplate()
+    local randomNumber = math.random(1, 9)
+    return "_lobbytemplategreen" .. randomNumber
+end
 
-getgenv().WebhookURL = "https://discord.com/api/webhooks/1290727516256075827/RYR2_LHEmk-5fbii_cOuq_hfZXCWw5w1SQ7lEw1DbomFS91xjq2F5-ApzFE84h1U_961"
-getgenv().BoostFPS = false
-getgenv().Disable3DRender = false
+local function generateRandomLevelName()
+    local randomNumber = math.random(1, 6)
+    return "namek_level_" .. randomNumber
+end
 
-script_key="NeYlQuZmRJZmHNdxRdnBuiNiWOWqCqib";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c8c006e970ed3323cef563220f3e3984.lua"))()
+-- Константа для пути к удаленным функциям
+local clientToServerEndpoints = game:GetService("ReplicatedStorage"):WaitForChild("endpoints"):WaitForChild("client_to_server")
+
+-- Генерируем случайные значения только один раз для каждой сессии
+local randomLobbyTemplate = generateRandomLobbyTemplate()
+local randomLevelName = generateRandomLevelName()
+
+-- Первый запрос (request_join_lobby)
+local args1 = {
+    [1] = randomLobbyTemplate
+}
+
+local success1, result1 = pcall(clientToServerEndpoints:WaitForChild("request_join_lobby").InvokeServer, clientToServerEndpoints:WaitForChild("request_join_lobby"), unpack(args1))
+if success1 then
+    print("Успешно отправлен запрос на присоединение к лобби:", result1)
+else
+    warn("Ошибка при отправке запроса на присоединение к лобби:", result1)
+end
+
+task.wait(1)
+
+-- Второй запрос (request_lock_level)
+local args2 = {
+    [1] = randomLobbyTemplate,
+    [2] = randomLevelName,
+    [3] = false,
+    [4] = "Normal"
+}
+
+local success2, result2 = pcall(clientToServerEndpoints:WaitForChild("request_lock_level").InvokeServer, clientToServerEndpoints:WaitForChild("request_lock_level"), unpack(args2))
+if success2 then
+    print("Успешно отправлен запрос на блокировку уровня:", result2)
+else
+    warn("Ошибка при отправке запроса на блокировку уровня:", result2)
+end
+
+task.wait(1)
+
+-- Третий запрос (request_start_game)
+local args3 = {
+    [1] = randomLobbyTemplate
+}
+
+local success3, result3 = pcall(clientToServerEndpoints:WaitForChild("request_start_game").InvokeServer, clientToServerEndpoints:WaitForChild("request_start_game"), unpack(args3))
+if success3 then
+    print("Успешно отправлен запрос на старт игры:", result3)
+else
+    warn("Ошибка при отправке запроса на старт игры:", result3)
+end
