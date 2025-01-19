@@ -21,9 +21,9 @@ getgenv().Config = {
 		["Teleport Lobby if Player"] = true
 	},
 	["Claimer"] = {
-		["Auto Claim Level Milestone"] = true,
-		["Auto Claim Quest"] = true,
-		["Auto Claim Present"] = true
+		["Auto Claim Level Milestone"] = false,
+		["Auto Claim Quest"] = false,
+		["Auto Claim Present"] = false
 	},
 	["Auto Play"] = {
 		["Auto Upgrade"] = true,
