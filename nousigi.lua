@@ -13,7 +13,7 @@ getgenv().Config = {
 	},
 	["Webhook"] = {
 		["Game Finished"] = true,
-		["URL"] = "https://discord.com/api/webhooks/1126161347411976314/Tc3MAV5dkx6Rmcrod5jiZk7UVX-rVANqnqN2ViCCneKhSwgKoUJE-kmUaLa4N9dfsmuF"
+		["URL"] = "https://discord.com/api/webhooks/1292222634272227399/u4Ml8C-UzLO08a1osvu9S9z7fbwKkW1xq7CNPnfsADmLmVcJlHleEKvJvBQ3wW2H6Tlt"
 	},
 	["Failsafe"] = {
 		["Auto Rejoin"] = true,
