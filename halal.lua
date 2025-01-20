@@ -1,11 +1,8 @@
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
-print("load")
 
-task.wait(10)
-
-print("join")
+local id = game.PlaceId
 
 local function generateRandomLobbyTemplate()
     local randomNumber = math.random(1, 9)
@@ -24,7 +21,14 @@ local clientToServerEndpoints = game:GetService("ReplicatedStorage"):WaitForChil
 local randomLobbyTemplate = generateRandomLobbyTemplate()
 local randomLevelName = generateRandomLevelName()
 
--- Первый запрос (request_join_lobby)
+while true do
+    local done = false
+    if id == 14229762361 then
+        print("not lobby")
+        found = true
+    end
+    if not done then 
+        -- Первый запрос (request_join_lobby)
 local args1 = {
     [1] = randomLobbyTemplate
 }
@@ -65,4 +69,7 @@ if success3 then
     print("Успешно отправлен запрос на старт игры:", result3)
 else
     warn("Ошибка при отправке запроса на старт игры:", result3)
+end
+end
+wait(7)
 end
