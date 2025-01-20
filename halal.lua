@@ -72,5 +72,6 @@ else
     warn("Ошибка при отправке запроса на старт игры:", result3)
 end
 end
-wait(7)
+print("repeat in 7 second!")
+task.wait(7)
 end
