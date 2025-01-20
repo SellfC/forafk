@@ -3,7 +3,7 @@ if not game:IsLoaded() then
 end
 print("load")
 
-task.wait(7)
+task.wait(10)
 
 print("join")
 
