@@ -25,7 +25,8 @@ while true do
     local done = false
     if id == 14229762361 then
         print("not lobby")
-        found = true
+        done = true
+        break
     end
     if not done then 
         -- Первый запрос (request_join_lobby)
