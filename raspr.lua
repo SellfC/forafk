@@ -7,10 +7,10 @@ local id = {
 }
 
 if id[PlayerId] then
-    setfpscap(8)
+    setfpscap(15)
     loadstring(game:HttpGet(id[PlayerId]))()
 else
-    setfpscap(8)
+    setfpscap(15)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/nousigi.lua"))()
 task.wait()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/halal.lua"))()
