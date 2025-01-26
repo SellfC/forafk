@@ -2,7 +2,7 @@ local user = "MariaRobinson9"
 local lobbies = workspace:WaitForChild("_LOBBIES"):WaitForChild("Story")
 while true do 
     local found = true
-    for i 1, 9 do
+    for i = 1, 9 do
         local lobbyName = "_lobbytemplategreen" .. i
         local value = lobbies:FindFirstChild(lobbyName):FindFirstChild("Players"):FindFirstChild("Value")
         if value and value.Value and value.Value:IsA("Player") then
