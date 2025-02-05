@@ -7,9 +7,5 @@ local id = {
 }
 
 if id[PlayerId] then
-    setfpscap(15)
     loadstring(game:HttpGet(id[PlayerId]))()
-else
-    setfpscap(8)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/nousigi.lua"))()
 end
