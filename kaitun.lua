@@ -8,7 +8,7 @@ getgenv().Config = {
             ["Enable"] = false
         }
     },
-    ["UI"] = true,
+    ["UI"] = false,
     ["Webhook"] = {
         ["URL"] = "https://discord.com/api/webhooks/1292222634272227399/u4Ml8C-UzLO08a1osvu9S9z7fbwKkW1xq7CNPnfsADmLmVcJlHleEKvJvBQ3wW2H6Tlt",
         ["Ping"] = "952168231827812412"
