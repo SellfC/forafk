@@ -1,5 +1,7 @@
 repeat task.wait() until game:IsLoaded()
 
+print("game check loaded")
+
 local games = {
     [10611639] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/raspr.lua',
     [4372130] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/bfwa.lua'
