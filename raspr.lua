@@ -8,6 +8,4 @@ local id = {
 
 if id[PlayerId] then
     loadstring(game:HttpGet(id[PlayerId]))()
-else
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/kaitun.lua"))()
 end
