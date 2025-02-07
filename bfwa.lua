@@ -11,7 +11,7 @@ getgenv().simple_settings = {
     ["OBJECTIVE"] = { -- Goals for farming and unlocking features
         ["GODHUMAN"] = true, -- Automatically unlock the "Godhuman" fighting style
         ["RACE-CONFIGURE"] = {
-            ["RACE"] = {"Human", "Skypiea", "Fishman", "Mink"}, -- List -- "Human", "Skypiea", "Fishman", "Mink"
+            ["RACE"] = {"Human", "Mink"}, -- List -- "Human", "Skypiea", "Fishman", "Mink"
             ["RACE-LOCK"] = true, -- Automatically change the character race if not in the list
             ["RACE-V3"] = true, -- Automatically upgrade character race to V3 if possible Human, Mink, (Fishman, Ghoul, Cyborg) soon
         },
