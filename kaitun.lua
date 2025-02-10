@@ -1,112 +1,48 @@
-getgenv().Config = {
-    ["Return Lobby"] = {
-        ["Enable"] = true,
-        ["Return Lobby For Check Challenge"] = {
-            ["Enable"] = false
+getgenv().simple_settings = {
+    ["MASTERY"] = { -- Settings related to leveling up weapon or skill mastery
+        ["ACTIVE"] = true, -- Enable or disable mastery leveling (true = enabled, false = disabled)
+        ["METHOD"] = "Half", -- Method for gaining mastery, "Half"[350] or "Full"[600]
+    },
+
+    ["RAID"] = {
+        ["MODE"] = "Legit", -- Legit / KillAura (Legit mode is Mob aura in raid)
+    },
+
+    ["OBJECTIVE"] = { -- Goals for farming and unlocking features
+        ["GODHUMAN"] = true, -- Automatically unlock the "Godhuman" fighting style
+        ["RACE-CONFIGURE"] = {
+            ["RACE"] = {"Human", "Mink"}, -- List -- "Human", "Skypiea", "Fishman", "Mink"
+            ["RACE-LOCK"] = true, -- Automatically change the character race if not in the list
+            ["RACE-V3"] = true, -- Automatically upgrade character race to V3 if possible Human, Mink, (Fishman, Ghoul, Cyborg) soon
         },
-        ["Return Lobby For Check Banner"] = {
-            ["Enable"] = false
-        }
+        ["FRAGMENT"] = 100000, -- Limit number of fragments to collect
+
+        -- SWORD
+        ["CANVANDER"] = true,
+        ["BUDDY-SWORD"] = true,
+        ["CURSED-DUAL-KATANA"] = true,
+        ["SHARK-ANCHOR"] = true,
+
+        --GUN
+        ["ACIDUM-RIFLE"] = true,
+        ["VENOM-BOW"] = true,
+        ["SOUL-GUITAR"] = true,
+
+        -- AURA
+        ["COLOR-HAKI"] = {"Pure Red","Winter Sky","Snow White"}, -- Aura color to craft
     },
-    ["UI"] = true,
-    ["Webhook"] = {
-        ["URL"] = "",
-        ["Ping"] = ""
+
+    ["FRUITPURCHASE"] = true, -- Automatically purchase fruits based on priority list
+    ["PRIORITYFRUIT"] = { -- List of preferred fruits to purchase or eat in order of priority
+        [1] = "Dragon-Dragon",
+        [2] = "Dough-Dough",
+        [3] = "Flame-Flame",
+        [4] = "Rumble-Rumble",
+        [5] = "Human-Human: Buddha",
+        [6] = "Dark-Dark",
     },
-    ["Change Acc If Use Rokid Tool"] = {
-        ["Enable"] = false,
-        ["Gem"] = 100000,
-        ["Level"] = 10
-    },
-    ["Auto Feed"] = {
-        ["Enable"] = false, 
-        ["Units"] = {
-            { Name = "ghostkun_evolved", Level = 59 },
-            { Name = "bee_girl", Level = 60 }
-        }
-    },
-    ["Auto Summon"] = {
-        ["Summon Rarity"] = {
-            ["Enable"] = true,
-            ["Rarity"] = {"Legendary"}
-        },
-        ["Unit"] = {
-            ["Enable"] = true,
-            ["Units"] = {"Berserker", "Honey", "Iceclaw (Rebirth)", "Dreamer"}
-        }
-    },
-    ["Auto Buy Merchant"] = {
-        ["Enable"] = true
-    },
-    ["Unit Evo"] = {
-        ghostkun = true,
-        grimmjow_res = true,
-        bee_girl = true,
-        gremmy = true,
-        guts = true,
-        law_2 = false,
-        usopp_ts = false,
-        feitan = false
-    },
-    ["Premium Evo"] = {
-        ["Evo Guts"] = {
-            ["Enable"] = false
-        },
-        ["Evo Usopp"] = {
-            ["Enable"] = false
-        },
-        ["Evo Law"] = {
-            ["Enable"] = false
-        },
-        ["Evo Stain"] = {
-            ["Enable"] = false
-        },
-        ["Evo Feitan"] = {
-            ["Enable"] = false
-        }
-    },
-    ["Sell When Summon"] = {"Rare", "Epic"},
-    ["Story"] = {
-        ["Map Farm"] = "Walled City",
-        ["Clear All Story"] = {
-            ["Enable"] = true
-        }
-    },
-    ["Check Challenge"] = {
-        ["Fruit Challenge"] = {
-            ["Enable"] = true
-        },
-        ["Daily Challenge"] = {
-            ["Enable"] = true
-        }
-    },
-    ["Equip"] = {
-        ["Equip Best"] = {
-            ["Enable"] = true, 
-        },
-        ["Equip Priorities"] = {
-            ["Enable"] = false, 
-            ["Units"] = {"guts_berserker", "bee_girl", "speedwagon", "bulma"}
-        },
-        ["Team"] = {
-        ["Enable"] = false,
-            ["Team For Story"] = {"bee_girl_evolved"},
-            ["Team For Clear Raid"] = {"goku_ssj3"},
-            ["Team For Clear Challenge"] = {"bee_girl"},
-            ["Team For Farm Relic"] = {"bee_girl"},
-            ["Team For Evo Guts"] = {"bee_girl_evolved"},
-            ["Team For Evo Usopp"] = {"bee_girl_evolved"},
-            ["Team For Evo Law"] = {"bee_girl_evolved"}
-        }
-    },
-    ["Game"] = {
-        ["Auto Sell"] = {
-            ["Enable"] = true,
-            ["Wave"] = 9
-        }
-    },
-    ["Black Screen"] = false
+
+    ["FPSCAP"] = 10, -- Limit the frame rate to optimize performance
+    ["LOWTEXTURE"] = true -- Reduce graphic quality for better performance
 }
-wait(10)
-script_key="hcKOUypNdHskflNcKaSVQSnVBQgNPZRU";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c6520db53985671e9ad61e87eaae702a.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"))()
