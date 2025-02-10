@@ -1,3 +1,4 @@
+setfpscap(10)
 getgenv().Config = {
 	["AutoSave"] = true,
 	["Summoner"] = {
