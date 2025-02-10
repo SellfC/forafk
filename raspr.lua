@@ -6,5 +6,5 @@ print("raspr.lua loaded")
 if table.find(ids, game.Players.LocalPlayer.UserId) then
     loadstring(game:HttpGet(url))()
 else
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/kaitun.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/nousigi.lua"))()
 end
