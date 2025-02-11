@@ -1,3 +1,4 @@
+setfpscap(10)
 getgenv().simple_settings = {
     ["MASTERY"] = { -- Settings related to leveling up weapon or skill mastery
         ["ACTIVE"] = true, -- Enable or disable mastery leveling (true = enabled, false = disabled)
