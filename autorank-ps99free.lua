@@ -1,21 +1,28 @@
 setfpscap(10)
-getgenv().Config = {
-    ["EquipEnchants"] = {"Coins", "Diamonds", "Treasure Hunter", "Strong Pets", "Tap Power"},
-    ["KickWhenReachGoal"] = {
-        ["Rank"] = 8,
-        ["Rebirth"] = 9,
-        ["Area"] = 200
-    },
-    ["StopAt"] = {
-        ["Rank"] = 8, 
-        ["Area"] = 200
-    },
-    
-    ["AutoOpen"] = true,
-    ["AutoBalloon"] = true, -- WANT A BAN? REPORT A BUG IN THIS SCRIPT.
+task.wait(5)
+script_key = "ZgkzYEFPGAOMTFUcOmCPLNakUBxgChhJ"
 
-    ["FPSBooster"] = true, -- REPORT NO SCRIPT BUGS.
-    ["UltraFPS"] = true, -- I WILL BAN YOU IF YOU REPORT ANY SCRIPT BUGS.
-    ["Webhook"] = "", -- DO NOT REPORT ANY SCRIPT BUGS. WE KNOW ITS BUGGED.
+getgenv().Config = {
+    ["Settings"] = {
+        ["EggToEquip"] = "Diamond Egg",
+        ["APIKEY"] = "",
+    },
+    ["Webhook"] = {
+        ["URL"] = "https://discord.com/api/webhooks/1290727516256075827/RYR2_LHEmk-5fbii_cOuq_hfZXCWw5w1SQ7lEw1DbomFS91xjq2F5-ApzFE84h1U_961",
+        ["UserID"] = "952168231827812412"
+    },
+    ["Mailing"] = {
+        ["ReceiverAccounts"] = {"MariaRobinson9"},
+        ["PetDifficulty"] = "1b",
+        ["DiamondsToMail"] = "100m",
+
+        ["Items"] = {
+            ["Runic Mining Chest"] = {["Mail"] = true, ["Quantity"] = 100},
+            ["Exotic Mining Chest"] = {["Mail"] = true, ["Quantity"] = 25},
+            ["Instant Luck 4"] = {["Mail"] = true, ["Quantity"] = 50},
+            ["Crystal Key"] = {["Mail"] = true, ["Quantity"] = 10},
+            ["Secret Key"] = {["Mail"] = true, ["Quantity"] = 3},
+        }
+    },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/177d65e916988f4b84dd21ed33a2aa91.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3e81498526a2339404140f03de6bc386.lua"))()
