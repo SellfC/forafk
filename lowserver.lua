@@ -1,3 +1,5 @@
+print("rejon loaded")
+
 local PlaceID = game.PlaceId
 local AllIDs = {}
 local foundAnything = ""
