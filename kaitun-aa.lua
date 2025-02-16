@@ -36,7 +36,7 @@ getgenv().Config = {
         }
     },
     ["Auto Buy Merchant"] = {
-    	["Enable"] = true
+    	["Enable"] = false
     },
     ["Unit Evo"] = {
         ghostkun = true,
