@@ -36,7 +36,7 @@ getgenv().Config = {
         }
     },
     ["Auto Buy Merchant"] = {
-    	["Enable"] = false
+    	["Enable"] = true
     },
     ["Unit Evo"] = {
         ghostkun = true,
@@ -112,6 +112,6 @@ getgenv().Config = {
     },
     ["Black Screen"] = false
 }
-task.wait(10)
+wait(10)
 script_key="aIenWSPQspumAznMThcBkgIgWgibmAdP";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c6520db53985671e9ad61e87eaae702a.lua"))()
