@@ -19,9 +19,10 @@ getgenv().Config = {
         ["Level"] = 10
     },
     ["Auto Feed"] = {
-        ["Enable"] = true, 
+        ["Enable"] = false, 
         ["Units"] = {
-            { Name = "bee_girl", Level = 60 }
+            { Name = "bee_girl", Level = 100 },
+            { Name = "bee_girl_evolved", Level = 100 }
         }
     },
     ["Auto Summon"] = {
@@ -31,37 +32,37 @@ getgenv().Config = {
         },
         ["Unit"] = {
             ["Enable"] = true,
-            ["Units"] = {"Berserker", "Honey", "Iceclaw (Rebirth)"}
+            ["Units"] = {"Berserker", "Honey", "Iceclaw (Rebirth)", "Dreamer", "Captain (Timeskip)", "Ghost-kun", "Operator (Heart)"}
         }
     },
     ["Auto Buy Merchant"] = {
     	["Enable"] = true
     },
     ["Unit Evo"] = {
-        ghostkun = false,
-        grimmjow_res = false,
+        ghostkun = true,
+        grimmjow_res = true,
         bee_girl = true,
-        gremmy = false,
+        gremmy = true,
         guts = true,
-        law_2 = false,
-        usopp_ts = false,
-        feitan = false
+        law_2 = true,
+        usopp_ts = true,
+        feitan = true
     },
     ["Premium Evo"] = {
         ["Evo Guts"] = {
             ["Enable"] = true
         },
         ["Evo Usopp"] = {
-            ["Enable"] = false
+            ["Enable"] = true
         },
         ["Evo Law"] = {
-            ["Enable"] = false
+            ["Enable"] = true
         },
         ["Evo Stain"] = {
             ["Enable"] = false
         },
         ["Evo Feitan"] = {
-            ["Enable"] = false
+            ["Enable"] = true
         }
     },
     ["Sell When Summon"] = {"Rare", "Epic"},
@@ -80,7 +81,7 @@ getgenv().Config = {
         }
     },
     ["Auto Infinite Castle"] = {
-    	["Enable"] = false,
+    	["Enable"] = true,
         ["Room"] = 100
     },
     ["Equip"] = {
@@ -98,9 +99,9 @@ getgenv().Config = {
             ["Team For Clear Challenge"] = {"bee_girl"},
             ["Team For Farm Relic"] = {"bulma", "bee_girl_evolved"},
             ["Team For Evo Guts"] = {"bulma", "bee_girl_evolved"},
-            ["Team For Evo Usopp"] = {"bee_girl_evolved"},
-            ["Team For Evo Law"] = {"bee_girl_evolved"},
-            ["Team For Infinite Castle"] = {"judar_evolved"}
+            ["Team For Evo Usopp"] = {"bulma", "bee_girl_evolved"},
+            ["Team For Evo Law"] = {"bulma", "bee_girl_evolved"},
+            ["Team For Infinite Castle"] = {"bulma", "bee_girl_evolved"}
         }
     },
     ["Game"] = {
@@ -111,6 +112,6 @@ getgenv().Config = {
     },
     ["Black Screen"] = false
 }
-wait(10)
+task.wait(10)
 script_key="aIenWSPQspumAznMThcBkgIgWgibmAdP";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c6520db53985671e9ad61e87eaae702a.lua"))()
