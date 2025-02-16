@@ -19,10 +19,9 @@ getgenv().Config = {
         ["Level"] = 10
     },
     ["Auto Feed"] = {
-        ["Enable"] = false, 
+        ["Enable"] = true, 
         ["Units"] = {
-            { Name = "bee_girl", Level = 100 },
-            { Name = "bee_girl_evolved", Level = 100 }
+            { Name = "bee_girl", Level = 60 }
         }
     },
     ["Auto Summon"] = {
@@ -32,37 +31,37 @@ getgenv().Config = {
         },
         ["Unit"] = {
             ["Enable"] = true,
-            ["Units"] = {"Berserker", "Honey", "Iceclaw (Rebirth)", "Dreamer", "Captain (Timeskip)", "Ghost-kun", "Operator (Heart)"}
+            ["Units"] = {"Berserker", "Honey", "Iceclaw (Rebirth)"}
         }
     },
     ["Auto Buy Merchant"] = {
     	["Enable"] = true
     },
     ["Unit Evo"] = {
-        ghostkun = true,
-        grimmjow_res = true,
+        ghostkun = false,
+        grimmjow_res = false,
         bee_girl = true,
-        gremmy = true,
+        gremmy = false,
         guts = true,
-        law_2 = true,
-        usopp_ts = true,
-        feitan = true
+        law_2 = false,
+        usopp_ts = false,
+        feitan = false
     },
     ["Premium Evo"] = {
         ["Evo Guts"] = {
             ["Enable"] = true
         },
         ["Evo Usopp"] = {
-            ["Enable"] = true
+            ["Enable"] = false
         },
         ["Evo Law"] = {
-            ["Enable"] = true
+            ["Enable"] = false
         },
         ["Evo Stain"] = {
             ["Enable"] = false
         },
         ["Evo Feitan"] = {
-            ["Enable"] = true
+            ["Enable"] = false
         }
     },
     ["Sell When Summon"] = {"Rare", "Epic"},
@@ -81,7 +80,7 @@ getgenv().Config = {
         }
     },
     ["Auto Infinite Castle"] = {
-    	["Enable"] = true,
+    	["Enable"] = false,
         ["Room"] = 100
     },
     ["Equip"] = {
@@ -99,9 +98,9 @@ getgenv().Config = {
             ["Team For Clear Challenge"] = {"bee_girl"},
             ["Team For Farm Relic"] = {"bulma", "bee_girl_evolved"},
             ["Team For Evo Guts"] = {"bulma", "bee_girl_evolved"},
-            ["Team For Evo Usopp"] = {"bulma", "bee_girl_evolved"},
-            ["Team For Evo Law"] = {"bulma", "bee_girl_evolved"},
-            ["Team For Infinite Castle"] = {"bulma", "bee_girl_evolved"}
+            ["Team For Evo Usopp"] = {"bee_girl_evolved"},
+            ["Team For Evo Law"] = {"bee_girl_evolved"},
+            ["Team For Infinite Castle"] = {"judar_evolved"}
         }
     },
     ["Game"] = {
