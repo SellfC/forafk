@@ -32,31 +32,31 @@ getgenv().Config = {
         },
         ["Unit"] = {
             ["Enable"] = true,
-            ["Units"] = {"Berserker", "Honey", "Iceclaw (Rebirth)", "Dreamer", "Captain (Timeskip)", "Ghost-kun", "Operator (Heart)"}
+            ["Units"] = {"Honey"}
         }
     },
     ["Auto Buy Merchant"] = {
     	["Enable"] = true
     },
     ["Unit Evo"] = {
-        ghostkun = true,
-        grimmjow_res = true,
+        ghostkun = false,
+        grimmjow_res = false,
         bee_girl = true,
-        gremmy = true,
-        guts = true,
-        law_2 = true,
-        usopp_ts = true,
+        gremmy = false,
+        guts = false,
+        law_2 = false,
+        usopp_ts = false,
         feitan = true
     },
     ["Premium Evo"] = {
         ["Evo Guts"] = {
-            ["Enable"] = true
+            ["Enable"] = false
         },
         ["Evo Usopp"] = {
-            ["Enable"] = true
+            ["Enable"] = false
         },
         ["Evo Law"] = {
-            ["Enable"] = true
+            ["Enable"] = false
         },
         ["Evo Stain"] = {
             ["Enable"] = false
