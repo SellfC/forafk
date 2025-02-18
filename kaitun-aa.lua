@@ -39,17 +39,17 @@ getgenv().Config = {
     },
     ["Unit Evo"] = {
         ghostkun = false,
-        grimmjow_res = false,
+        grimmjow_res = true,
         bee_girl = true,
         gremmy = false,
-        guts = false,
+        guts = true,
         law_2 = false,
         usopp_ts = false,
         feitan = true
     },
     ["Premium Evo"] = {
         ["Evo Guts"] = {
-            ["Enable"] = false
+            ["Enable"] = true
         },
         ["Evo Usopp"] = {
             ["Enable"] = false
