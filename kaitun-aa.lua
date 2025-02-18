@@ -1,6 +1,6 @@
 getgenv().Config = {
     ["Return Lobby"] = {
-        ["Enable"] = true,
+        ["Enable"] = false,
         ["Return Lobby For Check Challenge"] = {
             ["Enable"] = true
         },
@@ -10,7 +10,7 @@ getgenv().Config = {
     },
     ["UI"] = true,
     ["Webhook"] = {
-        ["URL"] = "https://discord.com/api/webhooks/1292222634272227399/u4Ml8C-UzLO08a1osvu9S9z7fbwKkW1xq7CNPnfsADmLmVcJlHleEKvJvBQ3wW2H6Tlt",
+        ["URL"] = "link",
         ["Ping"] = "108"
     },
     ["Change Acc If Use Rokid Tool"] = {
@@ -21,22 +21,21 @@ getgenv().Config = {
     ["Auto Feed"] = {
         ["Enable"] = false, 
         ["Units"] = {
-            { Name = "bee_girl", Level = 100 },
-            { Name = "bee_girl_evolved", Level = 100 }
+            { Name = "bee_girl", Level = 60 }
         }
     },
     ["Auto Summon"] = {
         ["Summon Rarity"] = {
-            ["Enable"] = true,
+            ["Enable"] = false,
             ["Rarity"] = {"Legendary"}
         },
         ["Unit"] = {
             ["Enable"] = true,
-            ["Units"] = {"Honey"}
+            ["Units"] = {"Berserker", "Honey", "Iceclaw (Rebirth)"}
         }
     },
     ["Auto Buy Merchant"] = {
-    	["Enable"] = true
+        ["Enable"] = true
     },
     ["Unit Evo"] = {
         ghostkun = false,
@@ -81,7 +80,7 @@ getgenv().Config = {
         }
     },
     ["Auto Infinite Castle"] = {
-    	["Enable"] = true,
+        ["Enable"] = true,
         ["Room"] = 100
     },
     ["Equip"] = {
@@ -99,9 +98,34 @@ getgenv().Config = {
             ["Team For Clear Challenge"] = {"bee_girl"},
             ["Team For Farm Relic"] = {"bulma", "bee_girl_evolved"},
             ["Team For Evo Guts"] = {"bulma", "bee_girl_evolved"},
-            ["Team For Evo Usopp"] = {"bulma", "bee_girl_evolved"},
-            ["Team For Evo Law"] = {"bulma", "bee_girl_evolved"},
-            ["Team For Infinite Castle"] = {"bulma", "bee_girl_evolved"}
+            ["Team For Evo Usopp"] = {"bee_girl_evolved"},
+            ["Team For Evo Law"] = {"bee_girl_evolved"},
+            ["Team For Infinite Castle"] = {"bee_girl_evolved"}
+        }
+    },
+    ["Auto Farm Relic"] = {
+        ["Enable"] = false,
+        ["List Relic"] = {
+            ["Ingots (Steel)"] = {
+                ["Enable"] = true,
+                ["Amount"] = 20,
+            },
+            ["Miracle Timepiece"] = {
+                ["Enable"] = true,
+                ["Amount"] = 1,
+            },
+            ["Mermaid Crown"] = {
+                ["Enable"] = true,
+                ["Amount"] = 3,
+            },
+            ["Clover Of The Wind"] = {
+                ["Enable"] = false,
+                ["Amount"] = 10, 
+            },
+            ["5-Leaf Clover"] = {
+                ["Enable"] = true,
+                ["Amount"] = 10, 
+            }
         }
     },
     ["Game"] = {
@@ -110,7 +134,10 @@ getgenv().Config = {
             ["Wave"] = 9
         }
     },
-    ["Black Screen"] = false
+    ["Misc"] = {
+        ["Fps Lock"] = 15,
+        ["Black Screen"] = false,
+    }
 }
 wait(10)
 script_key="aIenWSPQspumAznMThcBkgIgWgibmAdP";
