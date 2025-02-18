@@ -30,7 +30,7 @@ getgenv().Config = {
             ["Rarity"] = {"Legendary"}
         },
         ["Unit"] = {
-            ["Enable"] = true,
+            ["Enable"] = false,
             ["Units"] = {"Berserker", "Honey", "Iceclaw (Rebirth)"}
         }
     },
