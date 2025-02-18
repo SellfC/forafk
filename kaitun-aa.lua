@@ -1,6 +1,6 @@
 getgenv().Config = {
     ["Return Lobby"] = {
-        ["Enable"] = false,
+        ["Enable"] = true,
         ["Return Lobby For Check Challenge"] = {
             ["Enable"] = true
         },
@@ -93,7 +93,7 @@ getgenv().Config = {
         },
         ["Team"] = {
         ["Enable"] = true,
-            ["Team For Story"] = {"bulma", "bee_girl_evolved"},
+            ["Team For Story"] = {"bee_girl_evolved"},
             ["Team For Clear Raid"] = {"bulma", "bee_girl_evolved"},
             ["Team For Clear Challenge"] = {"bee_girl"},
             ["Team For Farm Relic"] = {"bulma", "bee_girl_evolved"},
