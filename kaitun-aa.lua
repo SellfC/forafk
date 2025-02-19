@@ -16,7 +16,7 @@ getgenv().Config = {
     ["Change Acc If Use Rokid Tool"] = {
         ["Enable"] = false,
         ["Gem"] = 100000,
-        ["Level"] = 10
+        ["Level"] = 40
     },
     ["Auto Feed"] = {
         ["Enable"] = false, 
