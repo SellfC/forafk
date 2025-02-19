@@ -10,7 +10,7 @@ getgenv().Config = {
     },
     ["UI"] = true,
     ["Webhook"] = {
-        ["URL"] = "link",
+        ["URL"] = "https://discord.com/api/webhooks/1341837867814486016/IChwIPwD9euOhUxGFehIQQmAxjRnBfGClR5Ylz5f1R3DyOT0GyBY7LLuNjYPpefY2pd5",
         ["Ping"] = "108"
     },
     ["Change Acc If Use Rokid Tool"] = {
@@ -26,16 +26,16 @@ getgenv().Config = {
     },
     ["Auto Summon"] = {
         ["Summon Rarity"] = {
-            ["Enable"] = false,
+            ["Enable"] = true,
             ["Rarity"] = {"Legendary"}
         },
         ["Unit"] = {
-            ["Enable"] = false,
-            ["Units"] = {"Berserker", "Honey", "Iceclaw (Rebirth)"}
+            ["Enable"] = true,
+            ["Units"] = {"Honey"}
         }
     },
     ["Auto Buy Merchant"] = {
-        ["Enable"] = false
+        ["Enable"] = true
     },
     ["Unit Evo"] = {
         ghostkun = false,
@@ -81,7 +81,7 @@ getgenv().Config = {
     },
     ["Auto Infinite Castle"] = {
         ["Enable"] = true,
-        ["Room"] = 100
+        ["Room"] = 50
     },
     ["Equip"] = {
         ["Equip Best"] = {
