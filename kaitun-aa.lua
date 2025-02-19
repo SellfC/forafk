@@ -135,7 +135,7 @@ getgenv().Config = {
         }
     },
     ["Misc"] = {
-        ["Fps Lock"] = 15,
+        ["Fps Lock"] = 60,
         ["Black Screen"] = false,
     }
 }
