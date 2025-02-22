@@ -141,5 +141,5 @@ getgenv().Config = {
 }
 wait(10)
 setfpscap(15)
-script_key="hcKOUypNdHskflNcKaSVQSnVBQgNPZRU";
+script_key="aIenWSPQspumAznMThcBkgIgWgibmAdP";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c6520db53985671e9ad61e87eaae702a.lua"))()
