@@ -135,10 +135,11 @@ getgenv().Config = {
         }
     },
     ["Misc"] = {
-        ["Fps Lock"] = 60,
+        ["Fps Lock"] = 15,
         ["Black Screen"] = false,
     }
 }
 wait(10)
+setfpscap(15)
 script_key="hcKOUypNdHskflNcKaSVQSnVBQgNPZRU";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c6520db53985671e9ad61e87eaae702a.lua"))()
