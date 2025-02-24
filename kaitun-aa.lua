@@ -26,11 +26,11 @@ getgenv().Config = {
     },
     ["Auto Summon"] = {
         ["Summon Rarity"] = {
-            ["Enable"] = true,
+            ["Enable"] = false,
             ["Rarity"] = {"Legendary"}
         },
         ["Unit"] = {
-            ["Enable"] = true,
+            ["Enable"] = false,
             ["Units"] = {"Honey"}
         }
     },
