@@ -1,6 +1,66 @@
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
-if getgenv().findfruit == true then
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+if getgenv().kaitun == true then
 getgenv().Key = "c05a75937114c5cb37e7fa03"
+getgenv().SettingFarm ={
+        ["Hide UI"] = false,
+        ["Reset Teleport"] = {
+            ["Enabled"] = false,
+            ["Delay Reset"] = 3,
+            ["Item Dont Reset"] = {
+                ["Fruit"] = {
+                    ["Enabled"] = true,
+                    ["All Fruit"] = true, 
+                    ["Select Fruit"] = {
+                        ["Enabled"] = true,
+                        ["Fruit"] = {"Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas","T-Rex-T-Rex"},
+                    },
+                },
+            },
+        },
+        ["White Screen"] = false,
+        ["Lock Fps"] = {
+            ["Enabled"] = false,
+            ["FPS"] = 20,
+        },
+        ["Get Items"] = {
+            ["Saber"] = true,
+            ["Godhuman"] =  true,
+            ["Skull Guitar"] = true,
+            ["Mirror Fractal"] = true,
+            ["Cursed Dual Katana"] = true,
+            ["Upgrade Race V2-V3"] = true,
+            ["Auto Pull Lever"] = true,
+        },
+        ["Select Hop"] = { -- 70% will have it
+            ["Hop Find Rip Indra Get Valkyrie Helm or Get Tushita"] = true, 
+            ["Hop Find Dough King Get Mirror Fractal"] = true,
+            ["Hop Find Raids Castle [CDK]"] = true,
+            ["Hop Find Cake Queen [CDK]"] = true,
+            ["Hop Find Soul Reaper [CDK]"] = true,
+            ["Hop Find Darkbeard [SG]"] = true,
+            ["Hop Find Mirage [ Pull Lever ]"] = true,
+        },
+        ["Buy Haki"] = {
+            ["Enhancement"] = false,
+            ["Skyjump"] = true,
+            ["Flash Step"] = true,
+            ["Observation"] = true,
+        },
+        ["Sniper Fruit Shop"] = {
+            ["Enabled"] = true, -- Auto Buy Fruit in Shop Mirage and Normal
+            ["Fruit"] = {"Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas","T-Rex-T-Rex"},
+        },
+        ["Lock Fruit"] = {"Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas","T-Rex-T-Rex"},
+        ["Webhook"] = {
+            ["Enabled"] = false,
+            ["WebhookUrl"] = "",
+        }
+    }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-kaitunBF.lua"))()
+else
+    if getgenv().findfruit == true then 
+        getgenv().Key = "c05a75937114c5cb37e7fa03"
 getgenv().Setting = {
     ["Delay Hop"] = 0,
     ["Webhook"] = {
@@ -33,15 +93,12 @@ getgenv().Setting = {
     }
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/refs/heads/main/HopFruit.lua"))()
-else
-if getgenv().banana == true then
-getgenv().Key = "c05a75937114c5cb37e7fa03" 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))() 
-else
-script_key = "GVnjEUyrpvmpjjywIGZWrdoRjnWSxZHP"
-getgenv().Team = "Pirates"
-getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
-getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
-end
+    else
+        if getgenv().banana == true then
+            getgenv().Key = "c05a75937114c5cb37e7fa03" 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+        else
+            print(game.PlaceId)
+        end
+    end
 end
