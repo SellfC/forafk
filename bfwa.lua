@@ -1,7 +1,7 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 if getgenv().kaitun == true then
 getgenv().Key = "c05a75937114c5cb37e7fa03"
-getgenv().SettingFarm ={
+    getgenv().SettingFarm ={
         ["Hide UI"] = false,
         ["Reset Teleport"] = {
             ["Enabled"] = false,
@@ -11,15 +11,15 @@ getgenv().SettingFarm ={
                     ["Enabled"] = true,
                     ["All Fruit"] = true, 
                     ["Select Fruit"] = {
-                        ["Enabled"] = true,
-                        ["Fruit"] = {"Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas","T-Rex-T-Rex"},
+                        ["Enabled"] = false,
+                        ["Fruit"] = {},
                     },
                 },
             },
         },
         ["White Screen"] = false,
         ["Lock Fps"] = {
-            ["Enabled"] = false,
+            ["Enabled"] = true,
             ["FPS"] = 20,
         },
         ["Get Items"] = {
@@ -31,7 +31,17 @@ getgenv().SettingFarm ={
             ["Upgrade Race V2-V3"] = true,
             ["Auto Pull Lever"] = true,
         },
+        ["Farm Fragments"] = {
+            ["Enabled"]  = true,
+            ["Fragment"] = 50000,
+        },
+        ["Auto Chat"] = {
+            ["Enabled"] = false,
+            ["Text"] = "",
+        },
+        ["Auto Summon Rip Indra"] = true, --- auto buy haki and craft haki legendary 
         ["Select Hop"] = { -- 70% will have it
+            ["Hop Server If Have Player Near"] = true, 
             ["Hop Find Rip Indra Get Valkyrie Helm or Get Tushita"] = true, 
             ["Hop Find Dough King Get Mirror Fractal"] = true,
             ["Hop Find Raids Castle [CDK]"] = true,
@@ -41,22 +51,21 @@ getgenv().SettingFarm ={
             ["Hop Find Mirage [ Pull Lever ]"] = true,
         },
         ["Buy Haki"] = {
-            ["Enhancement"] = false,
+            ["Enhancement"] = true,
             ["Skyjump"] = true,
             ["Flash Step"] = true,
             ["Observation"] = true,
         },
         ["Sniper Fruit Shop"] = {
             ["Enabled"] = true, -- Auto Buy Fruit in Shop Mirage and Normal
-            ["Fruit"] = {"Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas","T-Rex-T-Rex"},
+            ["Fruit"] = {"Leopard-Leopard","Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas"},
         },
-        ["Lock Fruit"] = {"Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas","T-Rex-T-Rex"},
+        ["Lock Fruit"] = {"Leopard-Leopard","Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas"},
         ["Webhook"] = {
             ["Enabled"] = false,
             ["WebhookUrl"] = "",
         }
     }
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-kaitunBF.lua"))()
 else
     if getgenv().findfruit == true then 
