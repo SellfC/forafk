@@ -7,7 +7,7 @@ _G.VanguardSettings = {
     ['ClaimBattlepass'] = true,
     ['Webhooks'] = {
         ['Enabled'] = true,
-        ['Url'] = ''
+        ['Url'] = 'https://discord.com/api/webhooks/1290727516256075827/RYR2_LHEmk-5fbii_cOuq_hfZXCWw5w1SQ7lEw1DbomFS91xjq2F5-ApzFE84h1U_961'
     }
 }
 (getgenv()).key = "MARUG5M1H8Y4Y9GLMXANGUMSM3";
