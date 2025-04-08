@@ -8,7 +8,8 @@ local games = {
     [3959677] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/autorank-ps99free.lua',
     [12229756] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/raspr.lua',
     [17219742] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/nousigi.lua',
-    [1912490] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/bss.lua'
+    [1912490] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/bss.lua',
+    [35687503] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/hantwers.lua'
 }
 
 if games[game.CreatorId] then
