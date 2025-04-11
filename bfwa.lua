@@ -1,72 +1,104 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 if getgenv().kaitun == true then
-getgenv().Key = "c05a75937114c5cb37e7fa03"
-    getgenv().SettingFarm ={
-        ["Hide UI"] = false,
-        ["Reset Teleport"] = {
-            ["Enabled"] = false,
-            ["Delay Reset"] = 3,
-            ["Item Dont Reset"] = {
-                ["Fruit"] = {
-                    ["Enabled"] = true,
-                    ["All Fruit"] = true, 
-                    ["Select Fruit"] = {
-                        ["Enabled"] = false,
-                        ["Fruit"] = {},
-                    },
-                },
+repeat task.wait() until game:IsLoaded()
+repeat task.wait() until game.Players
+repeat task.wait() until game.Players.LocalPlayer
+repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+_G.Team = "Pirate" -- Marine / Pirate
+getgenv().Script_Mode = "Kaitun_Script"
+_G.MainSettings = {
+    ["EnabledHOP"] = true,
+    ['FPSBOOST'] = true,
+    ["FPSLOCKAMOUNT"] = 60,
+    ['WhiteScreen'] = true,
+    ['CloseUI'] = false,
+    ["NotifycationExPRemove"] = true,
+    ['AFKCheck'] = 150,
+    ["LockFragments"] = 20000,
+    ["LockFruitsRaid"] = {
+        [1] = "Dough-Dough",
+        [2] = "Dragon-Dragon",        
+    }
+}
+_G.SharkAnchor_Settings = {
+    ["Enabled_Farm"] = true,
+    ['FarmAfterMoney'] = 2500000
+}
+_G.Quests_Settings = {        
+    ['Rainbow_Haki'] = true,
+    ["MusketeerHat"] = true,
+    ["PullLever"] = true,
+    ['DoughQuests_Mirror'] = {
+        ['Enabled'] = true,
+        ['UseFruits'] = true
+    }        
+}
+_G.Races_Settings = {
+    ['Race'] = {
+        ['EnabledEvo'] = true,
+        ["v2"] = true,
+        ["v3"] = true,
+        ["Races_Lock"] = {
+            ["Races"] = {
+                ["Mink"] = true,
+                ["Human"] = true,
+                ["Fishman"] = true
             },
-        },
-        ["White Screen"] = false,
-        ["Lock Fps"] = {
-            ["Enabled"] = true,
-            ["FPS"] = 20,
-        },
-        ["Get Items"] = {
-            ["Saber"] = true,
-            ["Godhuman"] =  true,
-            ["Skull Guitar"] = true,
-            ["Mirror Fractal"] = true,
-            ["Cursed Dual Katana"] = true,
-            ["Upgrade Race V2-V3"] = true,
-            ["Auto Pull Lever"] = true,
-        },
-        ["Farm Fragments"] = {
-            ["Enabled"]  = true,
-            ["Fragment"] = 50000,
-        },
-        ["Auto Chat"] = {
-            ["Enabled"] = false,
-            ["Text"] = "",
-        },
-        ["Auto Summon Rip Indra"] = true, --- auto buy haki and craft haki legendary 
-        ["Select Hop"] = { -- 70% will have it
-            ["Hop Server If Have Player Near"] = true, 
-            ["Hop Find Rip Indra Get Valkyrie Helm or Get Tushita"] = true, 
-            ["Hop Find Dough King Get Mirror Fractal"] = true,
-            ["Hop Find Raids Castle [CDK]"] = true,
-            ["Hop Find Cake Queen [CDK]"] = true,
-            ["Hop Find Soul Reaper [CDK]"] = true,
-            ["Hop Find Darkbeard [SG]"] = true,
-            ["Hop Find Mirage [ Pull Lever ]"] = true,
-        },
-        ["Buy Haki"] = {
-            ["Enhancement"] = true,
-            ["Skyjump"] = true,
-            ["Flash Step"] = true,
-            ["Observation"] = true,
-        },
-        ["Sniper Fruit Shop"] = {
-            ["Enabled"] = true, -- Auto Buy Fruit in Shop Mirage and Normal
-            ["Fruit"] = {"Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas"},
-        },
-        ["Lock Fruit"] = {"Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas"},
-        ["Webhook"] = {
-            ["Enabled"] = false,
-            ["WebhookUrl"] = "",
+            ["RerollsWhenFragments"] = 20000
         }
     }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-kaitunBF.lua"))()
+}
+_G.Fruits_Settings = {
+    ['Main_Fruits'] = {'Dough-Dough', 'Kitsune-Kitsune', 'T-Rex-T-Rex', 'Yeti-Yeti', 'Dragon-Dragon'},
+    ['Select_Fruits'] = {"Flame-Flame", "Ice-Ice", "Quake-Quake", "Light-Light", "Dark-Dark", "Spider-Spider", "Rumble-Rumble", "Magma-Magma", "Buddha-Buddha", "Kitsune-Kitsune", "T-Rex-T-Rex", "Yeti-Yeti", "Dragon-Dragon"}
+}
+_G.Settings_Melee = {
+    ['Superhuman'] = true,
+    ['DeathStep'] = true,
+    ['SharkmanKarate'] = true,
+    ['ElectricClaw'] = true,
+    ['DragonTalon'] = true,
+    ['Godhuman'] = true
+}
+_G.SwordSettings = {
+    ['Saber'] = true,
+    ["Pole"] = true,
+    ['MidnightBlade'] = true,
+    ['Shisui'] = false,
+    ['Saddi'] = false,
+    ['Wando'] = false,
+    ['Yama'] = true,
+    ['Rengoku'] = true,
+    ['Canvander'] = true,
+    ['BuddySword'] = true,
+    ['TwinHooks'] = true,
+    ['HallowScryte'] = false,
+    ['TrueTripleKatana'] = false,
+    ['CursedDualKatana'] = true
+}
+_G.GunSettings = {
+    ['Kabucha'] = true,
+    ['SerpentBow'] = true,
+    ['SoulGuitar'] = true
+}
+_G.FarmMastery_Settings = {
+    ['Melee'] = true,
+    ['Sword'] = true,
+    ['DevilFruits'] = true,
+    ['Select_Swords'] = {
+        ["AutoSettings"] = true,
+        ["ManualSettings"] = {
+            "Saber",
+            "Buddy Sword"
+        }
+    }
+}
+_G.Hop_Settings = {
+    ["Find Tushita"] = true
+}
+(getgenv()).key = "MARUG5M1H8Y4Y9GLMXANGUMSM3";
+(getgenv()).id = "952168231827812412";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
 else
     if getgenv().findfruit == true then 
         getgenv().Key = "c05a75937114c5cb37e7fa03"
