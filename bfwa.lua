@@ -100,7 +100,7 @@ getgenv().Setting = {
     ["Auto Random Fruit"] = true,
     ["Use Portal Teleport"] = false,
     ["Attacking"] = {
-        ["Weapon"] = "Blox Fruit", -- Sword,Melee,Blox Fruit
+        ["Weapon"] = "Melee", -- Sword,Melee,Blox Fruit
         ["Raid Castle"] = true,
         ["Factory"] = true,
     }
