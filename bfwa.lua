@@ -75,7 +75,7 @@ else
     if getgenv().findfruit == true then 
         getgenv().Key = "c05a75937114c5cb37e7fa03"
 getgenv().Setting = {
-    ["Delay Hop"] = 0,
+    ["Delay Hop"] = 5,
     ["Webhook"] = {
         ["url"] = "https://discord.com/api/webhooks/1290727516256075827/RYR2_LHEmk-5fbii_cOuq_hfZXCWw5w1SQ7lEw1DbomFS91xjq2F5-ApzFE84h1U_961",
         ["Webhook Target Fruit"] = true,
@@ -98,9 +98,9 @@ getgenv().Setting = {
         ["Enabled"] = true,
     },
     ["Auto Random Fruit"] = true,
-    ["Use Portal Teleport"] = true,
+    ["Use Portal Teleport"] = false,
     ["Attacking"] = {
-        ["Weapon"] = "Melee", -- Sword,Melee,Blox Fruit
+        ["Weapon"] = "Blox Fruit", -- Sword,Melee,Blox Fruit
         ["Raid Castle"] = true,
         ["Factory"] = true,
     }
