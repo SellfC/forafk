@@ -5,7 +5,7 @@ local First_Sea_Loc = CFrame.new(-13887.3965, -11048.6885, 350.285706, 0.9484562
 _G.Settings = {
 	["DefaultPosition"] = (Second_Sea and Second_Sea_Loc) or First_Sea_Loc,
 	["AfkCheckTime"] = 30, -- Seconds
-	["AfkFix"] = "Rejoin", -- Rejoin, Reset
+	["AfkFix"] = "Reset", -- Rejoin, Reset
 	["EquipRod"] = "Auto", -- Trident Rod, Destiny Rod,... Rod
 	["InstantFishing"] = true,
 	["Return to Sea1"] = {
@@ -31,6 +31,7 @@ _G.Settings = {
 			"Kraken Rod",
 			"Zeus Rod",
 			"Ethereal Prism Rod",
+
 			"Free Spirit Rod",
 		},
 	
@@ -68,6 +69,7 @@ _G.Settings = {
 			"Ice Warpers Rod",
 			"Avalanche Rod",
 			"Stone Rod",
+
 			"Wildflower Rod",
 			"Firefly Rod",
 			"Frog Rod",
@@ -142,7 +144,7 @@ _G.Settings = {
 		['Rod Displayed'] = 10,
 	},
 	['ShakeMode'] = "Fast", -- Fast, Fix bug
-	["FpsBoost"] = true,
+	["FpsBoost"] = false,
 	["Black_Screen"] = true
 }
 (getgenv()).key = "MARUG5M1H8Y4Y9GLMXANGUMSM3";
