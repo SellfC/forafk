@@ -10,7 +10,8 @@ local games = {
     [17219742] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/nousigi.lua',
     [1912490] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/bss.lua',
     [34644452] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/hantwers.lua',
-    [3194064] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/yba.lua'
+    [3194064] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/yba.lua',
+    [7381705] = 'https://raw.githubusercontent.com/SellfC/forafk/refs/heads/main/kaitun%20fsih.lua'
 }
 
 if games[game.CreatorId] then
