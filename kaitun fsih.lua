@@ -1,3 +1,4 @@
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 getgenv().Script_Mode = "Kaitun_Script"
 local Second_Sea = game.PlaceId == 72907489978215
 local Second_Sea_Loc = CFrame.new(1532.36096, 83.9225464, 2335.48999, -0.407974303, 3.71246642e-08, 0.912993431, 5.38818279e-09, 1, -3.825485e-08, -0.912993431, -1.06876197e-08, -0.407974303)
@@ -5,7 +6,7 @@ local First_Sea_Loc = CFrame.new(-13887.3965, -11048.6885, 350.285706, 0.9484562
 _G.Settings = {
 	["DefaultPosition"] = (Second_Sea and Second_Sea_Loc) or First_Sea_Loc,
 	["AfkCheckTime"] = 30, -- Seconds
-	["AfkFix"] = "Reset", -- Rejoin, Reset
+	["AfkFix"] = "Rejoin", -- Rejoin, Reset
 	["EquipRod"] = "Auto", -- Trident Rod, Destiny Rod,... Rod
 	["InstantFishing"] = true,
 	["Return to Sea1"] = {
@@ -139,14 +140,15 @@ _G.Settings = {
 	["RAM_Config"] = {
 		['Port'] = 7963,
 		['Password'] = "123",
-		['Update Interval'] = 5,
+		['Update Interval'] = 1,
 		['Subfix'] = " - ",
 		['Rod Displayed'] = 10,
 	},
 	['ShakeMode'] = "Fast", -- Fast, Fix bug
-	["FpsBoost"] = false,
+	["FpsBoost"] = true,
 	["Black_Screen"] = true
 }
+
 (getgenv()).key = "MARUG5M1H8Y4Y9GLMXANGUMSM3";
 (getgenv()).id = "952168231827812412";
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
