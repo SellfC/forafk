@@ -139,7 +139,7 @@ _G.Settings = {
 	},
 	["RAM_Config"] = {
 		['Port'] = 7963,
-		['Password'] = "123123123",
+		['Password'] = "",
 		['Update Interval'] = 1,
 		['Subfix'] = " - ",
 		['Rod Displayed'] = 10,
