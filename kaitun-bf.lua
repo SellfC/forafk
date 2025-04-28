@@ -1,49 +1,103 @@
-setfpscap(10)
-getgenv().simple_settings = {
-    ["MASTERY"] = { -- Settings related to leveling up weapon or skill mastery
-        ["ACTIVE"] = true, -- Enable or disable mastery leveling (true = enabled, false = disabled)
-        ["METHOD"] = "Half", -- Method for gaining mastery, "Half"[350] or "Full"[600]
-    },
-
-    ["RAID"] = {
-        ["MODE"] = "Legit", -- Legit / KillAura (Legit mode is Mob aura in raid)
-    },
-
-    ["OBJECTIVE"] = { -- Goals for farming and unlocking features
-        ["GODHUMAN"] = true, -- Automatically unlock the "Godhuman" fighting style
-        ["RACE-CONFIGURE"] = {
-            ["RACE"] = {"Human", "Mink"}, -- List -- "Human", "Skypiea", "Fishman", "Mink"
-            ["RACE-LOCK"] = true, -- Automatically change the character race if not in the list
-            ["RACE-V3"] = true, -- Automatically upgrade character race to V3 if possible Human, Mink, (Fishman, Ghoul, Cyborg) soon
-        },
-        ["FRAGMENT"] = 100000, -- Limit number of fragments to collect
-
-        -- SWORD
-        ["CANVANDER"] = true,
-        ["BUDDY-SWORD"] = true,
-        ["CURSED-DUAL-KATANA"] = true,
-        ["SHARK-ANCHOR"] = true,
-
-        --GUN
-        ["ACIDUM-RIFLE"] = true,
-        ["VENOM-BOW"] = true,
-        ["SOUL-GUITAR"] = true,
-
-        -- AURA
-        ["COLOR-HAKI"] = {"Pure Red","Winter Sky","Snow White"}, -- Aura color to craft
-    },
-
-    ["FRUITPURCHASE"] = true, -- Automatically purchase fruits based on priority list
-    ["PRIORITYFRUIT"] = { -- List of preferred fruits to purchase or eat in order of priority
-        [1] = "Dragon-Dragon",
-        [2] = "Dough-Dough",
-        [3] = "Flame-Flame",
-        [4] = "Rumble-Rumble",
-        [5] = "Human-Human: Buddha",
-        [6] = "Dark-Dark",
-    },
-
-    ["FPSCAP"] = 10, -- Limit the frame rate to optimize performance
-    ["LOWTEXTURE"] = true -- Reduce graphic quality for better performance
+repeat task.wait() until game:IsLoaded()
+repeat task.wait() until game.Players
+repeat task.wait() until game.Players.LocalPlayer
+repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+_G.Team = "Pirate" -- Marine / Pirate
+getgenv().Script_Mode = "Kaitun_Script"
+_G.MainSettings = {
+    ["EnabledHOP"] = true,
+    ['FPSBOOST'] = true,
+    ["FPSLOCKAMOUNT"] = 60,
+    ['WhiteScreen'] = true,
+    ['CloseUI'] = false,
+    ["NotifycationExPRemove"] = true,
+    ['AFKCheck'] = 150,
+    ["LockFragments"] = 20000,
+    ["LockFruitsRaid"] = {
+        [1] = "Dough-Dough",
+        [2] = "Dragon-Dragon",
+        [3] = "Kitsune-Kitsune",
+        [4] = "Yeti-Yeti",
+        [3] = "Gas-Gas",
+        [3] = "T-Rex-T-Rex",        
+    }
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"))()
+_G.SharkAnchor_Settings = {
+    ["Enabled_Farm"] = true,
+    ['FarmAfterMoney'] = 2500000
+}
+_G.Quests_Settings = {        
+    ['Rainbow_Haki'] = true,
+    ["MusketeerHat"] = true,
+    ["PullLever"] = true,
+    ['DoughQuests_Mirror'] = {
+        ['Enabled'] = true,
+        ['UseFruits'] = true
+    }        
+}
+_G.Races_Settings = {
+    ['Race'] = {
+        ['EnabledEvo'] = true,
+        ["v2"] = true,
+        ["v3"] = true,
+        ["Races_Lock"] = {
+            ["Races"] = {
+                ["Mink"] = true,
+                ["Human"] = true,
+                ["Fishman"] = true
+            },
+            ["RerollsWhenFragments"] = 20000
+        }
+    }
+}
+_G.Fruits_Settings = {
+    ['Main_Fruits'] = {'Kitsune-Kitsune'},
+    ['Select_Fruits'] = {"Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas","T-Rex-T-Rex"}
+}
+_G.Settings_Melee = {
+    ['Superhuman'] = true,
+    ['DeathStep'] = true,
+    ['SharkmanKarate'] = true,
+    ['ElectricClaw'] = true,
+    ['DragonTalon'] = true,
+    ['Godhuman'] = true
+}
+_G.SwordSettings = {
+    ['Saber'] = true,
+    ["Pole"] = true,
+    ['MidnightBlade'] = true,
+    ['Shisui'] = true,
+    ['Saddi'] = true,
+    ['Wando'] = false,
+    ['Yama'] = true,
+    ['Rengoku'] = false,
+    ['Canvander'] = false,
+    ['BuddySword'] = false,
+    ['TwinHooks'] = false,
+    ['HallowScryte'] = false,
+    ['TrueTripleKatana'] = false,
+    ['CursedDualKatana'] = true
+}
+_G.GunSettings = {
+    ['Kabucha'] = true,
+    ['SerpentBow'] = true,
+    ['SoulGuitar'] = true
+}
+_G.FarmMastery_Settings = {
+    ['Melee'] = true,
+    ['Sword'] = true,
+    ['DevilFruits'] = true,
+    ['Select_Swords'] = {
+        ["AutoSettings"] = true,
+        ["ManualSettings"] = {
+            "Saber",
+            "Buddy Sword"
+        }
+    }
+}
+_G.Hop_Settings = {
+    ["Find Tushita"] = true
+}
+(getgenv()).key = "MARUG5M1H8Y4Y9GLMXANGUMSM3";
+(getgenv()).id = "952168231827812412";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
