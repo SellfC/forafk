@@ -1,5 +1,7 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 
+task.wait(10)
+
 print("game check loaded")
 
 local games = {
