@@ -1,6 +1,6 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 
-task.wait(10)
+task.wait(5)
 
 print("game check loaded")
 
