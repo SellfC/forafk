@@ -14,6 +14,6 @@ getgenv().LoadGuiConfig = false -- Doesnt Load your in game ui config
 script_key = "OnceJnwOrwgSJEGIdnbRMlOtlmcCSDSa";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2b5a22900b1844b471fb009be4a2f8fb.lua"))()
 while true do
-task.wait(10)
+task.wait(1)
 setfpscap(20)
 end
